@@ -1,0 +1,116 @@
+.card-box-shadow{
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+.card-header-bg{
+    background:#414d5f;
+}
+.all-registration {
+	margin: 0;
+	float: left;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+.all_link {
+	color: #fff;
+	background: rgba(255,255,255,.05);
+	padding: 5px 10px;
+	float: right;
+	border-radius: 5px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-left: 4px;
+}
+.all_link:hover {
+	color: #00acc1;
+}
+.require_star {
+    color: red;
+}
+
+button.btn.submit-btn {
+    background: #414d5f;
+    padding: 11px 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-color: #414d5f;
+    font-weight: 500;
+}
+
+button.btn.submit-btn:hover {
+    color: #00acc1;
+}
+
+.has-error .col-form-label{
+	color: red;
+}
+  
+.has-error .form-control{
+	border: 1px solid red;
+}
+  
+.has-error .invalid-feedback{
+	display: block;
+	margin-left: 10px;
+}
+
+.view-icon i, .edit-icon i, .delete-icon i{
+	font-size: 18px;
+}
+
+.view-icon, .edit-icon, .delete-icon {
+	border-radius: 4px;
+	padding: 1px 7px;
+	display: inline-block;
+}
+.view-icon i{
+	color: white;
+}
+
+.edit-icon i{
+	color: white;
+}
+
+.delete-icon i{
+	color: white;
+}
+
+.link-share a {
+	color: #00acc1;
+}
+.recycle-body {
+    padding: 20px;
+    overflow: hidden;
+}
+.recycle.card.widget-flat {
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 5%);
+	background-color: #414d5f;
+}
+.recycle-icon i {
+    font-size: 50px;
+}
+span.recycle-count-number {
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 25px;
+}
+.recycle-count-title {
+    font-size: 20px;
+}
+
+.recycle-link-icon {
+    color: #00acc1;
+    padding-right: 5px;
+}
+.recycle-count-link:hover{
+	color: cyan;
+}
+
+button.btn.btn-primary.btn-modal-style {
+    float: right;
+}

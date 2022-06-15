@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,7 +29,7 @@ Route::get('/dashboard', function () {
 /* ------------- Admin Route Start -------------- */
 
 Route::prefix('admin')->group(function(){
-    Route::get('/login', [AdminController::class, 'index'])->name('login_from');
+    Route::get('/login', [AdminController::class, 'loginForm'])->name('login_from');
     Route::get('/login/owner', [AdminController::class, 'login'])->name('admin.login');
     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 });
