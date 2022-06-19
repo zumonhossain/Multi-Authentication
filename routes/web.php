@@ -30,8 +30,9 @@ Route::get('/dashboard', function () {
 
 Route::prefix('admin')->group(function(){
     Route::get('/login', [AdminController::class, 'loginForm'])->name('login_from');
-    Route::get('/login/owner', [AdminController::class, 'login'])->name('admin.login');
-    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    Route::post('/login/owner', [AdminController::class, 'adminLogin'])->name('admin.login');
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard')->middleware('admin');
+    Route::get('/logout', [AdminController::class, 'adminLogout'])->name('admin.logout')->middleware('admin');
 });
 
 /* ------------- Admin Route End -------------- */
