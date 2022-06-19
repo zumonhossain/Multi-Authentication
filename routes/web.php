@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SellerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +39,19 @@ Route::prefix('admin')->group(function(){
 });
 
 /* ------------- Admin Route End -------------- */
+
+
+
+
+
+
+/* ------------- Seller Route Start -------------- */
+
+Route::prefix('seller')->group(function(){
+    Route::get('/login', [SellerController::class, 'sellerLoginForm'])->name('seller_login_from');
+});
+
+/* ------------- Seller Route End -------------- */
 
 
 
